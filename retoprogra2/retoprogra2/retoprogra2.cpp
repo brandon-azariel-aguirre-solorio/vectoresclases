@@ -5,10 +5,10 @@ int main()
 {
 	int numeros[10];
 	int i, suma, resta, multiplicacion;
-	int divicion;
+	long float divicion;
 	suma = 0;
 	resta = 0;
-	divicion = 1;
+    divicion = 1;
 	multiplicacion = 1;
 	for (i = 0; i <= 9; i++)
 	{
@@ -17,7 +17,7 @@ int main()
 		suma = suma + numeros[i];
 		resta = resta - numeros[i];
 		multiplicacion = multiplicacion * numeros[i];
-		divicion = numeros[i] / divicion;
+		divicion = divicion/numeros[i];
 	}
 	cout << "La suma es de: " << suma << endl;
 	cout << "La resta es de: " << resta << endl;
@@ -25,4 +25,3 @@ int main()
 	cout << "La divicion es de: " << divicion << endl;
 	return 0;
 }
-
