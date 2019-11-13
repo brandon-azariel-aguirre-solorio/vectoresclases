@@ -3,19 +3,26 @@
 using namespace std;
 int main()
 {
-	int numeros[10], i, num, vectorsuma[10], vectorresta[10], vectormultiplicacion[10], vectordivicion[10];
-	for(i=1;i<=10;i++)
+	int numeros[10];
+	int i, num, suma, resta, multiplicacion, divicion;
+	suma = 0;
+	resta = 0;
+	multiplicacion = 1;
+	divicion = 1;
+	for (i = 0; i <= 9; i++)
 	{
-		cout << "Ingresa un numero ";
+		cout << "Introduce un numero: ";
 		cin >> numeros[i];
+		suma = suma + numeros[i];
+		resta = resta - numeros[i];
+		multiplicacion = multiplicacion * numeros[i];
+		divicion = divicion / numeros[i];
 	}
-	vectorsuma[i] = vectorsuma[i]+ vectorsuma[i]+ vectorsuma[i]+ vectorsuma[i]+ vectorsuma[i]+ vectorsuma[i]+ vectorsuma[i]+ vectorsuma[i]+ vectorsuma[i]+ vectorsuma[i];
-	
-	cout << "La suma es de:" << vectorsuma[i] << endl;
-	cout << "La resta es de:" << vectorresta[i] << endl;
-	cout << "La multiplicacion es de:" << vectormultiplicacion[i] << endl;
-	cout << "La divicion es de:" << vectordivicion[i] << endl;
-
+	cout << "La suma es de: " << suma << endl;
+	cout << "La resta es de: " << resta << endl;
+	cout << "La multiplicacion es de: " << multiplicacion << endl;
+	cout << "La divicion es de: " << divicion << endl;
 	return 0;
+
 }
 
